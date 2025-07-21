@@ -1,12 +1,39 @@
-# React + Vite
+🏙️ CivicPulse – Crowdsourced Local Issue Tracker
+CivicPulse is a full-stack web application that empowers local citizens to report and track civic issues in their neighborhoods, such as potholes, streetlight outages, and sanitation problems. It also provides admins with a region-specific dashboard to view and address reports within their assigned areas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Tech Stack
+Frontend: React.js, Tailwind CSS, Lucide Icons
 
-Currently, two official plugins are available:
+Backend: Node.js, Express.js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Database: MongoDB (with Mongoose ORM)
 
-## Expanding the ESLint configuration
+Authentication: JWT-based login/signup (with role-based access: User/Admin)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Geographic Filtering: Reports and user accounts include state and optional area fields for filtering
+
+REST API: Modular and secure Express-based routes for users, admins, and reports
+
+Deployment: (Optional – add Netlify/Vercel for frontend, Render/Railway for backend)
+
+✨ Features
+📝 Users can submit local issue reports (with optional images and geolocation).
+
+👤 Admins can view and filter reports by assigned state and area.
+
+🔐 Role-based login system: Admins and Users have separate dashboards.
+
+📍 Geo-tagged filtering: Ensures admins only access reports relevant to their assigned region.
+
+📊 Dashboard views for My Reports, All Reports (admin), and issue analytics (planned).
+
+📁 Clean folder structure using React Router, controllers, and modular APIs.
+
+📌 Future Improvements
+📷 Image upload for reports (via Cloudinary or Firebase Storage)
+
+📊 Issue analytics & status tracking
+
+📩 Admin-user communication (e.g., updates on issue resolution)
+
+🔔 Notifications via email or in-app
